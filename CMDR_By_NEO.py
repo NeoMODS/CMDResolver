@@ -101,8 +101,8 @@ while bucle < 9999999:
         os.system("shutdown -i")
 
     if accion == ("4"):
-        ipenemiga = input("Introduzca la ip o pagina web ")
-        os.system("ping " + ipenemiga + " -t")
+        ipenemiga = input("Introduzca la ip ")
+        os.system("python flood.py -i " + ipenemiga + " -p 80")
 
     limpiar = input("""
 ¿Quieres limpiar la pantalla? S/N  """)
